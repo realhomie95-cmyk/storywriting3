@@ -167,12 +167,13 @@ CHARACTER LOCK — do not change across photo, caption, and full story:
 
 Read `references/caption-methodology.md` first.
 
-- **Length**: 1000–1200 characters (count characters)
-- **If over 1200 chars**: leave it as-is — do **not** trim, cut, or compress to fit. Length cap is a target, not a hard ceiling.
-- **Structure**: 3 paragraphs + blank line + CTA
+- **Length**: 2000–3000 characters (count characters)
+- **If over 3000 chars**: leave it as-is — do **not** trim, cut, or compress to fit. Length cap is a target, not a hard ceiling.
+- **Voice**: Storytelling — scene-driven prose, human and specific (see caption-methodology.md)
+- **Structure**: 5–7 short paragraphs + blank line + CTA
 - **CTA**: Only `MORE`, `YES`, or `NEXT`
 - **No twist spoil** — payoff stays in full story
-- **Visual anchor**: Paragraph 2 includes one detail from photo prompt
+- **Visual anchor**: Paragraph 3 (photo moment) weaves in 2–3 details from photo prompt
 - **Style variety**: No two consecutive same opening style
 
 Opening styles:
@@ -305,8 +306,9 @@ Full schema + copy-paste prompts: `references/batch-mode.md`
 - [ ] Google content policy OK
 
 **Caption**
-- [ ] 1000–1200 chars each (if over, keep as-is — do not trim)
-- [ ] Paragraph 2 has photo visual detail
+- [ ] 2000–3000 chars each (if over, keep as-is — do not trim)
+- [ ] Storytelling voice; 5–7 paragraphs before CTA
+- [ ] Photo moment paragraph has 2–3 visual details from prompt
 - [ ] No twist spoil; no consecutive same opening style
 - [ ] CTA = MORE / YES / NEXT only
 
