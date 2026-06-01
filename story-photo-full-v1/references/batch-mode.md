@@ -175,7 +175,7 @@ Dùng skill storywriting — Phase 0 ONLY.
 
 Batch: {BATCH_ID} | Items: {IDS} | Source: {CONCEPT_SOURCE}
 
-Đọc concept bank tương ứng (concepts1 / concepts2 / concepts3 setting, hoặc concepts4 engine).
+Đọc concept bank tương ứng (concepts1 / concepts2 / concepts3 setting, concepts4 engine, hoặc concepts5 viral genre family).
 
 Nếu MIXED-BANK: chạy `node scripts/pick-batch.js` (hoặc đọc engine-map đã có) và IN BẢNG ENGINE-MAP trước khi viết arc. Xem batch-mode.md → Mixed-bank batch.
 
