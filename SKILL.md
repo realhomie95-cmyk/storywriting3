@@ -8,7 +8,8 @@ description: >
 
   Use whenever the user mentions: storywriting, story-photo-full-v1, story photo full, photo story
   pipeline, batch mode, Nano Banana 2, 4:5 photo prompt, Facebook drama photo, self-taken photo
-  prompt, Facebook caption + full story, concepts1, concepts2, concepts3, concepts4, concept bank,
+  prompt, Facebook caption + full story, concepts1, concepts2, concepts3, concepts4, concepts5, concept bank,
+  viral drama genre, viral-long caption,
   narrative engine, category A–M drama,
   Rich vs Poor, Workplace, Wedding, Military, Lullaby drama photo posts.
 
@@ -52,6 +53,7 @@ Platform: **Nano Banana 2** (Google image generation)
 | `references/concepts2.md` | 240 seeds in 12 groups |
 | `references/concepts3.md` | 600 seeds in 50 new setting groups |
 | `references/concepts4.md` | 930 seeds in 31 narrative engines (beyond humiliation→reveal) |
+| `references/concepts5.md` | 750 seeds in 30 viral drama genre families (FB long-caption style) |
 | `references/story-engines.md` | Master engine registry (E00 + E01–E31): tone, photo rule, Turn→Payoff |
 | `references/caption-methodology.md` | Before any caption |
 | `references/full-story-methodology.md` | Before any full story |
@@ -61,6 +63,7 @@ Platform: **Nano Banana 2** (Google image generation)
 - "concepts2" / "concept 03" → `concepts2.md`
 - "concepts3" / "group 07" → `concepts3.md`
 - "concepts4" / "engine 07" → `concepts4.md` (organized by narrative engine; mix with any setting)
+- "concepts5" / "family F07" / "viral genre" → `concepts5.md` (genre family; default E00; pair with any setting/engine)
 - Custom scenario → no bank required
 
 ---
