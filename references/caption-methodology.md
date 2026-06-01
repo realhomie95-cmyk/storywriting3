@@ -20,12 +20,33 @@ Create curiosity and a reason to click through to the **full story article** —
 
 | Property | Value |
 |---|---|
-| Length | 1000–1200 characters (count **characters**, not words). If a caption runs over 1200, **keep it as-is — never trim or compress to fit**. |
+| Length | **2000–3000 characters** (count **characters**, not words). If a caption runs over 3000, **keep it as-is — never trim or compress to fit**. |
 | Language | English |
-| Structure | 3 paragraphs + 1 blank line + CTA |
+| Voice | **Storytelling** — human, specific, scene-driven prose (see [Storytelling voice](#storytelling-voice) below). Not summary-style, not stiff AI tone. |
+| Structure | **5–7 short paragraphs** (2–4 sentences each) + 1 blank line + CTA |
 | Dialogue | Only quote lines that appear **verbatim in the photo prompt or full story plan** — never invent for caption alone |
-| Ending | Never reveal the full twist |
+| Ending | Never reveal the full twist / payoff |
 | CTA purpose | Drive comment engagement (`MORE` / `YES` / `NEXT`) before user posts article link in comments |
+
+---
+
+## Storytelling voice
+
+The caption is a **substantial story opening** — roughly the first third of the emotional arc — not a teaser blurb.
+
+**Do**
+- Write in **close third person** or **first person witness POV** (one per caption; stay consistent)
+- Ground every beat in **place, time, and bodies in space** (who stands where, what the room feels like)
+- Use **concrete verbs and sensory detail** — light, texture, sound, smell where natural
+- Vary sentence length — longer breath, then a short punch line
+- Let **silence, glances, and small gestures** carry tension
+- Build **2–3 micro-scenes** inside the caption (arrival → pressure → almost-turn)
+
+**Don't**
+- Summarize the photo ("In this image we see…")
+- Stack adjectives or generic emotion labels ("she was devastated")
+- Open with "In a world where…" / "Little did they know…"
+- Repeat the same paragraph shape as the previous caption in the batch
 
 ---
 
@@ -93,19 +114,32 @@ Best for: *Slow-Burn Devotion, The Last Wish, Bittersweet/Too Late* (concepts4 E
 
 ---
 
-## Paragraph Structure
+## Paragraph Structure (storytelling arc)
 
-### Paragraph 1 — Emotional Hook
-Establish the **core tension** in the first two sentences — get to it fast. The tension depends on the engine: unfairness (humiliation), a mystery or clue (reunion/recognition), a need or crisis (kindness/crisis hero), a longing (devotion), or a hard choice (sacrifice).
+Use **5–7 short paragraphs**. Each paragraph = 2–4 sentences. The caption should read like the opening pages of a Facebook long-read — immersive, but still stopping before payoff.
 
-### Paragraph 2 — Build the Pressure
-Deepen the **stakes** — humiliation, suspense, need, or anticipation, whichever the engine runs on. Include **one specific visual detail** from the photo prompt (worn shirt, oil on hands, cracked sole, badge clipped backward).
+### ¶1 — Drop the reader in
+Open **in medias res** with the core tension within the first 2–3 sentences. Engine-dependent: unfairness, mystery, need, crisis clock, longing, or moral choice.
 
-### Paragraph 3 — Begin the Twist
-Let something shift — stop before full payoff. Use action, reaction, object clue, or one exact dialogue line. End one step from knowing. (For action engines, the photo may already show the deed — the caption still withholds the *outcome*.)
+### ¶2 — Place and people
+Name the setting (US-specific), who is present, and the power dynamic or emotional stakes. One line of **relationship context** (why today hurts, why this room matters).
 
-### Blank Line + CTA
+### ¶3 — The photo moment (visual anchor)
+Describe the **peak-tension beat** the image shows — actions, expressions, posture. Weave in **2–3 specific visual details** from the photo prompt (outfit, object clue, lighting, background tell). This paragraph should make the reader look at the photo and recognize the scene.
+
+### ¶4 — Pressure deepens
+Escalate: antagonist confidence, bystander reactions, ticking clock, or mounting need. Optional: one **short quoted line** (verbatim from prompt/plan only).
+
+### ¶5 — Secondary beat or witness thread
+A small scene expansion — a memory flash, a side character reaction, the object clue gaining weight, or the protagonist's restraint/dignity. Adds runway without resolving.
+
+### ¶6 — (optional) ¶7 — Approach the turn
+Something **shifts** — a sound, a step forward, a hand reaching, a name almost spoken. Stop **one beat before** the full reveal. For action-in-photo engines: the deed may be referenced; the **outcome/recognition** stays hidden.
+
+### Blank line + CTA
 One blank line before CTA. CTA must contain exactly one of: `'MORE'`, `'YES'`, `'NEXT'`
+
+> **Length guide:** 2000–3000 chars usually means ¶1–¶5 are essential; use ¶6–¶7 when the story needs more emotional runway. Never pad with filler — every paragraph must advance tension.
 
 **Allowed CTA formats:**
 ```
@@ -126,7 +160,7 @@ Type 'NEXT' if you want the next part!! 🔗
 | Opening beat | Hooks with the core tension | Shows peak-tension moment | Opens matching caption energy, then expands |
 | Twist / payoff | Hidden | Not shown (except the *action* in action-in-photo engines — outcome still hidden) | Fully revealed with satisfying ending |
 | Dialogue | Max 1 quoted line if in prompt | Optional in scene description | Full dialogue allowed |
-| Visual detail | One from photo prompt | Primary source | Enriched, not contradicted |
+| Visual detail | 2–3 woven into ¶3 (and echoed lightly later) | Primary source | Enriched, not contradicted |
 
 ---
 
@@ -140,10 +174,11 @@ Type 'NEXT' if you want the next part!! 🔗
 
 ## Quality Checklist
 
-- [ ] 1000–1200 characters (count them) — if over, keep as-is, do not trim
-- [ ] Reads like story opening, not image description
-- [ ] Paragraph 2 has one visual detail from photo prompt
-- [ ] Paragraph 3 begins twist without completing it
+- [ ] 2000–3000 characters (count them) — if over, keep as-is, do not trim
+- [ ] Storytelling voice — scene-driven, human, not summary or image caption
+- [ ] 5–7 short paragraphs before CTA
+- [ ] ¶3 anchors to photo with 2–3 visual details from photo prompt
+- [ ] Final story paragraphs approach turn without completing payoff
 - [ ] Quotes match source verbatim
 - [ ] CTA uses only MORE / YES / NEXT
 - [ ] Opening style differs from previous caption in batch

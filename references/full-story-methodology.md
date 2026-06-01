@@ -103,11 +103,12 @@ The 4-act spine works for every engine, but the **default *humiliation → revea
 
 The first 2–3 sentences of the full story must feel like the **next paragraph** after the caption, not a reboot.
 
-**Caption ends with:** tension rising, twist not revealed, CTA for MORE.
+**Caption (2000–3000 chars):** A substantial storytelling opening — often through the approach-to-turn beat. Twist still not revealed; CTA follows.
 
 **Full story opens with:**
 - Same scene, same characters, slightly wider lens
-- Acknowledge the moment caption described — then move forward
+- **Do not repeat** the caption — extend past where it stopped (caption may already cover early Acts 1–2 beats)
+- Acknowledge the moment caption described — then move forward into fresh pressure or the Turn
 - May include the caption's quoted line naturally in context
 
 **Example flow:**

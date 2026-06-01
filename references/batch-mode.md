@@ -233,9 +233,9 @@ Dùng skill storywriting — Phase 2A ONLY.
 Đọc output/{BATCH_ID}/{BATCH_ID}.json (items có photoPrompt)
 
 Viết CAPTION cho {IDS} (nửa đầu).
-- 1000–1200 ký tự mỗi caption (đếm ký tự) — nếu vượt quá thì GIỮ NGUYÊN, không trim
-- 3 đoạn + blank line + CTA (MORE / YES / NEXT)
-- Đoạn 2: 1 visual detail từ photo prompt
+- 2000–3000 ký tự mỗi caption (đếm ký tự) — nếu vượt quá thì GIỮ NGUYÊN, không trim
+- Phong cách storytelling — 5–7 đoạn ngắn + blank line + CTA (MORE / YES / NEXT)
+- Đoạn photo moment: 2–3 visual detail từ photo prompt
 - Không spoil twist
 - openingStyle đúng plan
 
