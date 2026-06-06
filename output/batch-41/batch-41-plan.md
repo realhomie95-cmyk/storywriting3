@@ -1,230 +1,268 @@
-# BATCH-41 — Story Plan (story-photo-full-v2)
+# BATCH-41 | C41001–C41010 | concepts5 — RANDOM FAMILY MIX (10 distinct families)
 
-- **Batch:** batch-41
-- **Items:** C41001–C41010 (10)
-- **Prefix:** C41
-- **Concept source:** concepts5 — RANDOM FAMILY MIX (10 distinct families from F01–F30, excluding F03/F08/F11/F13/F17/F19/F22/F25/F28/F30)
-- **Pipeline:** v2 (caption 4000–5000 chars, full story 7000–8000 chars, Nano Banana 2 / 4:5 photo)
-- **Run mode:** ONE-SHOT override (Phase 0→4 in one session)
-
-## Seed-map
-
-| ID | Family | Seed | conceptSource | Engine | Tone | Opening style | Photo rule | Setting |
-|----|--------|------|---------------|--------|------|---------------|-----------|---------|
-| C41001 | F01 Will & Inheritance Wars | #08 The Trust Protector | concepts5 #F01-08 | E04 — The Test in Disguise | mixed | Cold-open dialogue | twist-hidden | Nashville, TN |
-| C41002 | F02 DNA & Parentage Truth | #14 The Funeral Sample | concepts5 #F02-14 | E15 — The Truth That Exonerates | mixed | Sensory fragment | twist-hidden | Newark, NJ |
-| C41003 | F04 Funeral & Presumed Dead | #03 The Eulogy Interruption | concepts5 #F04-03 | E00 — Humiliation → Reveal | feel-good | The Return | twist-hidden | Billings, MT |
-| C41004 | F06 Secret Billionaire / Hidden Owner | #19 The Ferry Ticket Booth | concepts5 #F06-19 | E31 — The Provider in Disguise | feel-good | Object focus | twist-hidden | Anacortes, WA |
-| C41005 | F09 Mistress in My House | #24 The Holiday Helper | concepts5 #F09-24 | E12 — Karma / Comeuppance | mixed | Overheard line | twist-hidden | Tampa, FL |
-| C41006 | F10 Recorded Evidence & Legal Strike | #16 The Podcast Hot Mic | concepts5 #F10-16 | E04 — The Test in Disguise | mixed | Time-stamp open | twist-hidden | Minneapolis, MN |
-| C41007 | F14 Surrogacy & Baby Contract | #08 The Birth Plan Override | concepts5 #F14-08 | E00 — Humiliation → Reveal | feel-good | Direct address | twist-hidden | Denver, CO |
-| C41008 | F16 Sibling Rivalry & Estate War | #11 The Farm Equipment Auction | concepts5 #F16-11 | E30 — Full-Circle Role Reversal | feel-good | Reverse hook | twist-hidden | Salem, OR |
-| C41009 | F20 Oil Land & Texas Royalty | #06 The Pipeline Easement | concepts5 #F20-06 | E06 — Quiet Competence | bittersweet | Silent witness | twist-hidden | Midland, TX |
-| C41010 | F23 Influencer & Online Unmasking | #05 The Collab House Eviction | concepts5 #F23-05 | E30 — Full-Circle Role Reversal | bittersweet | In medias res | twist-hidden | Atlanta, GA |
-
-**Distinct engines:** 7 (E04, E15, E00, E31, E12, E30, E06) — cap = 7 ✓
-**Consecutive duplicate check:** E04→E15→E00→E31→E12→E04→E00→E30→E06→E30 — none consecutive ✓
-**Tone mix:** feel-good = 4, bittersweet = 2, mixed = 4 ✓
-**Opening styles:** 10 distinct, no consecutive repeats ✓
-**States:** TN, NJ, MT, WA, FL, MN, CO, OR, TX, GA — 10 distinct ✓
+Pipeline: **story-photo-full-v2** | Engines: E00, E11, E03, E06, E01, E09, E03, E12, E11, E01 (6 distinct)
 
 ---
 
-## 4-Beat Arcs + Character Locks
+## Seed-Map
 
-### C41001 — F01-08 | The Trust Protector → The Janitor He Fired Holds His Shares
+| ID | Family | Seed | Engine | Tone | Opening Style | Photo Rule | Setting |
+|----|--------|------|--------|------|---------------|------------|---------|
+| C41001 | F01 Will & Inheritance Wars | F01-17 The Art Collection | E00 Humiliation → Reveal | mixed | Dialogue Slap | twist-hidden | Savannah, GA |
+| C41002 | F04 Funeral & Presumed Dead | F04-06 The Missing Life Insurance | E11 Bittersweet / Too Late | bittersweet | Object Clue | twist-hidden | Portland, ME |
+| C41003 | F07 Maid Disguise & Undercover Sting | F07-11 The Airbnb Turnover | E03 Debt of Gratitude | feel-good | The Return | twist-hidden | Asheville, NC |
+| C41004 | F10 Recorded Evidence & Legal Strike | F10-04 The Zoom Record Button | E06 Quiet Competence | mixed | Silent Witness | twist-hidden | Minneapolis, MN |
+| C41005 | F14 Surrogacy & Baby Contract | F14-08 The Birth Plan Override | E01 Kindness Rewarded | feel-good | Accuser POV | twist-hidden | Scottsdale, AZ |
+| C41006 | F16 Sibling Rivalry & Estate War | F16-05 The Caregiver Discount | E09 Slow-Burn Devotion | mixed | Quiet Devotion | twist-hidden | Burlington, VT |
+| C41007 | F20 Oil Land & Texas Royalty | F20-03 (Roughneck Heir) | E03 Debt of Gratitude | feel-good | Tender Moment | twist-hidden | Midland, TX |
+| C41008 | F23 Influencer & Online Unmasking | F23-14 (Exposed Charity Grift) | E12 Karma / Comeuppance | mixed | Room Goes Wrong | twist-hidden | Miami, FL |
+| C41009 | F26 Immigration & Sham Marriage | F26-07 (The Courthouse Reveal) | E11 Bittersweet / Too Late | bittersweet | Visual Reveal | twist-hidden | Chicago, IL |
+| C41010 | F29 PTA & School Power Play | F29-19 (The Silent Volunteer) | E01 Kindness Rewarded | feel-good | Victim Restraint | twist-hidden | Eugene, OR |
 
-**Engine:** E04 — The Test in Disguise | **Tone:** mixed | **Photo:** twist-hidden
-**Opening style:** Cold-open dialogue
-
-**Arc:**
-1. **Setup:** At Whitmore & Associates law firm in Nashville, TN, nephew Bradley Whitmore, 34, has just been told he inherits his uncle's $40M construction company. The reading is at the downtown conference room. Bradley is already planning layoffs and asset sales. He fired the company janitor, Hector Salas, 63, two months ago for "budget reasons."
-2. **Clue:** The trust attorney pauses after reading the inheritance clause — there is a Trust Protector with veto power over any asset transfer. Bradley has never heard of this role. The attorney glances at the door.
-3. **Turn:** Hector Salas walks in wearing a pressed shirt instead of coveralls. The attorney introduces him: "Mr. Salas is the appointed Trust Protector. Your uncle designated him eighteen years ago. He has the power to freeze every share if the heir fails the character evaluation."
-4. **Payoff:** Hector produces a binder documenting Bradley's treatment of employees — including his own firing. The trust is frozen. The company stays intact, workers keep jobs, and Bradley must complete a 12-month supervised management review under Hector's oversight or forfeit everything.
-
-**Character Lock:**
-- **Bradley Whitmore** — 34, white, slicked-back dark hair, charcoal suit with monogrammed cufflinks, smug jaw, a leather portfolio open on the conference table
-- **Hector Salas** — 63, Latino, silver-streaked hair combed neatly, weathered hands, a pressed white shirt with no tie, reading glasses in breast pocket, a manila binder under his arm
-- **Margaret Ito** — 52, Japanese-American, trust attorney, a black blazer and pearl earrings, wire-rim glasses, calm and precise
-- **Setting** — Whitmore & Associates conference room, 18th floor, downtown Nashville, TN; mahogany table, floor-to-ceiling windows overlooking Broadway, late afternoon golden light
-- **Object clue** — the manila binder Hector carries (documenting employee treatment records — the evaluation tool the trust requires)
-
----
-
-### C41002 — F02-14 | The Funeral Sample → The Hairbrush That Proves the Son
-
-**Engine:** E15 — The Truth That Exonerates | **Tone:** mixed | **Photo:** twist-hidden
-**Opening style:** Sensory fragment
-
-**Arc:**
-1. **Setup:** At a funeral home in Newark, NJ, the family of patriarch Vincent Moreau, 78 (recently deceased), gathers to divide the estate. Vincent's youngest, Andre Moreau, 29, has been called "not a real Moreau" his entire life by his half-siblings because his mother was a brief second marriage. They've filed to contest his inheritance share, claiming he isn't biologically Vincent's son.
-2. **Clue:** Andre's mother, Celeste, 56, quietly collected a hairbrush from Vincent's nightstand before the funeral home took the body. She sealed it in a plastic bag and handed it to a private lab two days ago.
-3. **Turn:** At the attorney's office post-funeral, the half-siblings present their petition to exclude Andre. Celeste stands, opens her purse, and hands the attorney a sealed lab report. The DNA from the hairbrush confirms Andre is Vincent's biological son — 99.98% match.
-4. **Payoff:** The petition is dismissed. Andre inherits his full share. The half-siblings who spent years ostracizing him sit in silence. Andre takes the hairbrush — now in an evidence bag — and places it in his coat pocket. He says nothing to them. He just leaves with his mother.
-
-**Character Lock:**
-- **Andre Moreau** — 29, biracial (Black/white), lean build, a dark navy suit slightly too large (borrowed), close-cropped hair, quiet intensity in his eyes
-- **Celeste Moreau** — 56, Black, elegant even in grief, a charcoal wrap dress, a small leather purse with brass clasp, silver earrings, composed
-- **Richard Moreau** — 42, white, eldest half-sibling, ruddy face, expensive gray suit, arms crossed, a sneer barely concealed
-- **Setting** — Brennan & Associates Law Office, Newark, NJ; a cramped conference room with beige walls, fluorescent lights, a rectangular table with too many chairs, a Wednesday morning two days after the funeral
-- **Object clue** — the sealed plastic bag with Vincent's hairbrush (silver-backed, with gray hairs still caught in the bristles — the evidence nobody thought to contest)
+**Tone balance:** 4 feel-good / 2 bittersweet / 4 mixed ✓
+**Engine rotation check:** E00 → E11 → E03 → E06 → E01 → E09 → E03 → E12 → E11 → E01 ✓ (no consecutive duplicates)
+**Opening style rotation:** all 10 distinct ✓
+**States:** GA, ME, NC, MN, AZ, VT, TX, FL, IL, OR — 10 distinct ✓
 
 ---
 
-### C41003 — F04-03 | The Eulogy Interruption → The Dead Brother Clears His Throat
-
-**Engine:** E00 — Humiliation → Reveal | **Tone:** feel-good | **Photo:** twist-hidden
-**Opening style:** The Return
-
-**Arc:**
-1. **Setup:** At a small church in Billings, MT, the family of Frank Delaney, 48, gathers for his memorial service. Frank supposedly died in a car accident in Idaho three weeks ago. His brother, Patrick Delaney, 51, delivers a glowing eulogy about Frank's generosity, selflessness, and devotion to family — while Frank's wife, Maureen, 45, sits in the front pew looking strangely composed.
-2. **Clue:** Patrick's eulogy includes a line: "Frank always said he'd do anything to protect this family from the people trying to destroy it." In the back pew, a man in a baseball cap shifts in his seat. His hands are weathered. His build is familiar.
-3. **Turn:** Patrick finishes. The room is quiet. Then from the back pew, a voice: "That was beautiful, Pat. But you got one thing wrong." Frank Delaney stands up, removes his cap, and faces the congregation. He isn't dead. The accident was staged — by Maureen and her lover — to collect a $2M life insurance policy. Frank survived, went to the authorities, and has been cooperating with investigators for three weeks.
-4. **Payoff:** Two FBI agents enter the church. Maureen is escorted out. The insurance fraud charges are filed that afternoon. Frank sits down next to Patrick in the front pew. Patrick can't speak. Frank puts a hand on his brother's shoulder and says: "I'm sorry I let you give that speech. You did good, though."
-
-**Character Lock:**
-- **Frank Delaney** — 48, white, broad-shouldered, a faded denim jacket over a flannel shirt, a baseball cap pulled low, three-week stubble, alive and steady-eyed
-- **Patrick Delaney** — 51, white, thinning red hair, a black suit that doesn't quite fit, reading from folded paper at the lectern, tears held back
-- **Maureen Delaney** — 45, white, ash-blonde hair in a low chignon, a black dress with a pearl brooch, seated front pew, hands folded too tightly
-- **Setting** — Grace Lutheran Church, Billings, MT; wood-paneled walls, narrow stained-glass windows, twelve rows of pews, a simple oak lectern, Tuesday morning 10 AM, gray autumn light
-- **Object clue** — the baseball cap Frank removes (a faded blue Yellowstone cap — the same one in the "last photo" Maureen submitted to the insurance company)
+## Story Arcs
 
 ---
 
-### C41004 — F06-19 | The Ferry Ticket Booth → The Slow Woman Owns the Dock
+### C41001 | Worthless Paintings → Hidden Masterpiece
 
-**Engine:** E31 — The Provider in Disguise | **Tone:** feel-good | **Photo:** twist-hidden
-**Opening style:** Object focus
+**Seed:** F01-17 — Relatives fight over worthless paintings → the appraiser identifies one canvas as a missing master worth the entire estate
+
+**Engine:** E00 — Humiliation → Reveal
 
 **Arc:**
-1. **Setup:** At the Anacortes, WA ferry terminal, summer tourists line up impatiently while ticket-booth operator Doris Yuen, 67, Chinese-American, takes her time with each transaction. She asks about their trip, offers suggestions, hands tickets with both hands. Commuters and tourists grumble. A group of college kids filming a vlog mocks her pace: "Grandma's running Windows 95."
-2. **Clue:** A marina maintenance worker, Sam, notices Doris's name badge says "D. Yuen" — the same name on the dock's ownership plaque that no tourist ever reads. The brass plaque by the gangway says "Yuen Maritime Trust — Est. 1974."
-3. **Turn:** A county official arrives to discuss the terminal renovation budget. He greets Doris by her full name and title — she owns the ferry, the marina, and the restaurant at the end of the dock. Her family built this terminal. She works the booth because she believes the first face a visitor sees should be kind.
-4. **Payoff:** The college kids overhear and go silent. Doris stamps their return tickets and says: "Have a good trip. The clam chowder at the restaurant is on me today — tell them Doris sent you." She goes back to her window. The line moves at her pace. Nobody complains again.
+1. **Setup:** The Kincaid family gathers in the parlor of their late grandmother's Victorian home in Savannah, GA for the estate division. Three siblings fight over antiques while dismissing a collection of twelve oil paintings in the attic as "garage sale junk." Youngest daughter Margot, 34, an art restorer, asks to keep the paintings — they laugh and agree instantly.
+2. **Clue:** Margot carefully examines one canvas — a small harbor scene with a distinctive craquelure pattern and an unusual pigment she recognizes. She says nothing. Her brother Trent, 41, mocks her: "Take your finger paintings, Margot. The rest of us will split what actually matters."
+3. **Turn:** An independent appraiser Margot contacted arrives three weeks later. The harbor scene is a lost Thomas Cole landscape from 1836 — stolen from a Boston museum in 1971 and presumed destroyed. Value: $14.2 million. Under the will's terms, whatever each heir chose is theirs alone.
+4. **Payoff:** Margot's "worthless" paintings are worth more than the rest of the estate combined. Trent and the siblings have no legal recourse — they signed the division agreement laughing. Margot donates the Cole to the museum that lost it and uses the finder's fee to open her own restoration studio.
 
 **Character Lock:**
-- **Doris Yuen** — 67, Chinese-American, silver-black hair in a short practical cut, wire-rimmed glasses, a navy ferry-company polo with "D. Yuen" name badge, weathered hands that move deliberately
-- **Sam Olsen** — 34, white, marina maintenance worker, a high-vis vest over a thermal shirt, notices things others miss
-- **Setting** — Anacortes Ferry Terminal, Anacortes, WA; a covered ticket booth with a sliding glass window, a line of tourists with luggage, Puget Sound visible beyond the dock, brass ownership plaque on the gangway post, Saturday morning 9 AM, cool marine fog
-- **Object clue** — the brass ownership plaque on the gangway post ("Yuen Maritime Trust — Est. 1974" — visible but unread by everyone rushing past)
+- MARGOT KINCAID — 34, white, auburn hair in a low bun, wire-frame glasses, paint-stained fingers, wears a linen blouse and olive cargo pants; art restorer, quiet, observant, overlooked by family
+- TRENT KINCAID — 41, white, ruddy face, polo shirt tucked into khakis, gold signet ring; eldest brother, loud, dismissive, treats Margot as the family afterthought
+- CAROLINE KINCAID-PIERCE — 38, white, blond highlights, silk scarf, coordinating handbag; middle sister, sides with Trent
+- Setting: Grandmother's Victorian estate, E. Gaston Street, Savannah, GA; Saturday afternoon, April, Spanish moss visible through parlor windows, dust motes in sunlight
+- Object clue: small harbor-scene oil painting with unusual craquelure pattern, leaning against attic wall
+
+**Peak-tension (photo):** Trent holding a silver candlestick and laughing while pointing at Margot who cradles a dusty framed canvas; Caroline behind him smirking; attic light filtering through a dormer window — Beat 2, twist NOT shown.
 
 ---
 
-### C41005 — F09-24 | The Holiday Helper → The Apron Pocket Wedding Band
+### C41002 | Widow Accused of Fraud → Husband Alive
 
-**Engine:** E12 — Karma / Comeuppance | **Tone:** mixed | **Photo:** twist-hidden
-**Opening style:** Overheard line
+**Seed:** F04-06 — A widow is accused of fraud → her husband appears with the agent who helped fake the death
+
+**Engine:** E11 — Bittersweet / Too Late
 
 **Arc:**
-1. **Setup:** In a large house in Tampa, FL, wife Renata Castillo, 38, has hired "seasonal help" — a woman named Jocelyn, 29 — to assist with holiday gift-wrapping in the den for two weeks. Renata's husband, Derek Castillo, 40, insisted on the hire. Jocelyn works late, wraps gifts, organizes the closet, and always stays after Renata goes to bed.
-2. **Clue:** Renata's twelve-year-old daughter, Maya, notices Jocelyn's apron pocket holds something shiny. One night Maya sees it clearly: a wedding band. Matching Derek's. Engraved inside with his pet name.
-3. **Turn:** Renata finds the band after Jocelyn leaves early one evening. She photographs the engraving, hires a PI, and within four days has hotel receipts, text screenshots, and a timeline. She does not confront. She wraps the evidence inside Derek's Christmas gift box — a leather watch case — and waits for Christmas morning.
-4. **Payoff:** Christmas morning, Derek opens the watch case in front of both families. Inside: the matching ring, the hotel receipts, and a note from Renata's divorce attorney. Jocelyn's seasonal employment is terminated. Derek's composure shatters in front of his parents and children. Renata stays seated, calm, still in her robe. She says: "Merry Christmas, Derek."
+1. **Setup:** Nora Stiles, 52, is summoned to the Cumberland County Courthouse in Portland, ME to face insurance fraud charges. Her husband Daniel vanished during a sailing trip two years ago; his body was never recovered. The insurance company claims she orchestrated his death for a $1.8M payout.
+2. **Clue:** Nora notices a figure in the courthouse hallway — a man in a rain jacket with the same gait as Daniel. She dismisses it as grief. Her attorney finds a sealed document from the insurance agent who processed the claim: a note saying "Policy activated per client instruction."
+3. **Turn:** Daniel Stiles walks into the courtroom. Alive. Beside him is the insurance agent, Gerald Foss, who helped him fake his death to escape gambling debts Daniel hid from Nora for a decade. Daniel's appearance clears Nora of fraud — but reveals their entire marriage was built on a lie.
+4. **Payoff:** Nora is exonerated. Daniel faces criminal charges for insurance fraud and abandonment. But the reunion isn't joyful — Nora looks at the man she mourned for two years and feels nothing. She signs divorce papers in the courthouse lobby. The bittersweet truth: she'd finally rebuilt her life, and his return undoes the closure she fought for.
 
 **Character Lock:**
-- **Renata Castillo** — 38, Latina, dark wavy hair past shoulders, a cream cashmere robe on Christmas morning, steady hands, controlled fury behind composed features
-- **Derek Castillo** — 40, white, athletic build, a fitted henley, wedding band on left hand, confident smile cracking
-- **Jocelyn Pryor** — 29, white, honey-blonde ponytail, a festive apron over jeans, a matching wedding band hidden in apron pocket
-- **Maya Castillo** — 12, biracial, observant brown eyes, pajamas, sitting cross-legged by the tree
-- **Setting** — Castillo family home, Tampa, FL; a spacious living room with a decorated Christmas tree, wrapped gifts, family gathered on couches, Christmas morning 8 AM, warm Florida light through plantation shutters
-- **Object clue** — the matching wedding band in Jocelyn's apron pocket (same engraving as Derek's — the proof a twelve-year-old noticed first)
+- NORA STILES — 52, white, shoulder-length gray-streaked brown hair, no makeup, navy peacoat over a simple black dress; composed but exhausted, hands clasped tightly in her lap
+- DANIEL STILES — 54, white, thinner than before, graying beard, green rain jacket, wedding ring still on; haunted, avoids eye contact
+- GERALD FOSS — 61, white, wire-rimmed glasses, rumpled tan suit, briefcase; retired insurance agent, nervous
+- Setting: Cumberland County Courthouse, Portland, ME; Tuesday morning, November, gray light through tall courtroom windows, wood paneling, gallery half-full
+- Object clue: sealed envelope from insurance agent labeled "Policy activated per client instruction"
+
+**Peak-tension (photo):** Nora seated at the defendant's table, hands clasped, face stoic; through the courtroom's glass door panel, a blurred figure in a green rain jacket stands in the hallway — Beat 2, twist NOT shown.
 
 ---
 
-### C41006 — F10-16 | The Podcast Hot Mic → The Donor Dinner Remark That Ends a Career
+### C41003 | Airbnb Cleaner Reported → City Housing Inspector
 
-**Engine:** E04 — The Test in Disguise | **Tone:** mixed | **Photo:** twist-hidden
-**Opening style:** Time-stamp open
+**Seed:** F07-11 — Hosts rate a cleaner poorly for asking questions → she documents code violations for the city housing board
+
+**Engine:** E03 — Debt of Gratitude ("You Don't Remember Me")
 
 **Arc:**
-1. **Setup:** Minneapolis City Councilwoman Diane Voss, 52, hosts a private donor dinner at a downtown restaurant. She doesn't know the podcast crew recording a "behind the scenes" feature left a lapel mic hot during the private portion. Diane makes a remark about a constituent group she publicly champions — dismissive, contemptuous, the opposite of her public persona.
-2. **Clue:** The podcast producer, Kenji Okafor, 31, discovers the recording during editing. He flags it to his editor. The timestamp reads 8:47 PM — seventeen minutes into the private dinner, thirty seconds after the scheduled recording "ended."
-3. **Turn:** Kenji faces a choice: bury it or publish. He contacts Diane's office first, offering a response window. Her chief of staff threatens legal action and calls Kenji "a nobody with a microphone." Kenji publishes the clip — timestamped, unedited, with full context of what came before and after.
-4. **Payoff:** The clip goes viral. The constituent group she mocked holds a press conference. Diane resigns within the week. Kenji's podcast gains 200,000 subscribers. At the press conference, the community leader says: "We always knew. Now everyone else does too."
+1. **Setup:** Camille Broussard, 47, works turnover shifts cleaning Airbnb units in Asheville, NC. The management company, Peak Stays LLC, rates her poorly for "asking too many questions" about electrical panels, smoke detectors, and stair railings. They dock her pay and threaten termination.
+2. **Clue:** Camille photographs a junction box with exposed wiring in a unit rented to families. She notes the address in a small leather notebook. The property manager, Devon Marsh, 33, catches her taking photos and fires her on the spot: "You're a cleaner, not an inspector."
+3. **Turn:** Three weeks later, Devon receives a city housing board citation. The inspector's badge on the notice belongs to Camille Broussard — she is a licensed code enforcement officer embedded by the city after a tourist's child was electrocuted in a rental unit last year. That child's family is the reason she volunteered for this assignment.
+4. **Payoff:** Peak Stays LLC is shut down pending full inspection. Camille's documentation leads to 23 citations across 11 properties. Devon faces personal liability. The family whose child was hurt — the Nguyens — send Camille flowers. She'd promised them at the hospital: "I'll make sure no one else gets hurt in those houses."
 
 **Character Lock:**
-- **Diane Voss** — 52, white, auburn hair in a professional blow-out, a burgundy blazer, a lapel microphone she forgot was active, a practiced public smile
-- **Kenji Okafor** — 31, Nigerian-American, slim build, a plain black crew-neck, over-ear headphones around his neck, a laptop open to an audio waveform
-- **Setting** — Two locations: (1) Private dining room, The Linden restaurant, downtown Minneapolis, MN; white tablecloths, wine glasses, muted lighting, 8:47 PM. (2) Kenji's home studio — a desk with monitors, acoustic foam, a red RECORDING indicator light, late evening
-- **Object clue** — the lapel microphone still clipped to Diane's blazer (a small black square she forgot was live — the seventeen-minute confession she never meant to make public)
+- CAMILLE BROUSSARD — 47, Black, natural hair in a twist-out, strong hands, wears a gray cleaning smock over jeans and work boots; licensed code enforcement officer, patient, methodical, carries a small leather notebook
+- DEVON MARSH — 33, white, styled hair, fitted polo with Peak Stays logo, smartwatch, Bluetooth earpiece; property manager, dismissive, micromanages staff
+- Setting: Airbnb rental unit, historic Victorian conversion, Montford neighborhood, Asheville, NC; Tuesday morning, summer, hardwood floors, exposed brick, narrow staircase
+- Object clue: small leather notebook with handwritten addresses; junction box with exposed wiring behind a closet door
+
+**Peak-tension (photo):** Devon pointing at Camille with one hand while holding a phone in the other (calling to report her), Camille standing calmly with a cleaning caddy in one hand, her other hand resting near her jeans pocket where the leather notebook edge is visible — Beat 2, twist NOT shown.
 
 ---
 
-### C41007 — F14-08 | The Birth Plan Override → The Surrogate Who Was Always the Mother
+### C41004 | HR Denies Recording → Employee Has Cloud Link
 
-**Engine:** E00 — Humiliation → Reveal | **Tone:** feel-good | **Photo:** twist-hidden
-**Opening style:** Direct address
+**Seed:** F10-04 — HR insists a meeting was not recorded → the employee shares the cloud link marked auto-record
+
+**Engine:** E06 — Quiet Competence (Right All Along)
 
 **Arc:**
-1. **Setup:** At a hospital in Denver, CO, intended parents Craig and Vanessa Palmer, both 38, arrive with a birth plan that overrides the surrogate's preferences — epidural mandated, no visitors, baby taken immediately to their suite. Surrogate Tamsin Howell, 32, has been compliant throughout pregnancy but feels increasingly dismissed.
-2. **Clue:** A nurse notices Tamsin's medical power-of-attorney document lists her as the decision-maker, not the Palmers. The agency contract has a clause the Palmers never read closely.
-3. **Turn:** When delivery begins, the Palmers try to bar Tamsin's sister from the room. The charge nurse checks the POA and the contract: Tamsin retains full medical decision authority during labor. Additionally, a genetic-test letter in Tamsin's file reveals the agency made an embryo error — Tamsin is the biological mother. The Palmers' embryo was never transferred.
-4. **Payoff:** Hospital legal halts the hand-off. Tamsin holds her daughter for the first time, rightfully. The Palmers are directed to the agency for fraud remediation. Tamsin's sister sits beside her. The baby is hers — always was.
+1. **Setup:** Priya Chakraborty, 36, a senior data analyst at Vanguard Metrics in Minneapolis, MN, reports her manager for retaliatory reassignment after she raised concerns about falsified client reports. HR schedules a "resolution meeting" over Zoom and assures her it's a safe space — no formal record.
+2. **Clue:** During the meeting, HR director Sandra Holm, 48, and Priya's manager, Craig Dunlap, 44, pressure Priya to sign a "voluntary lateral transfer" or face a performance improvement plan. Sandra states clearly: "This meeting is not being recorded and nothing said here is admissible." Priya nods. Says nothing. Signs nothing.
+3. **Turn:** Two weeks later, Priya's attorney sends a demand letter to Vanguard's legal counsel — attached is a Zoom cloud recording link. The meeting was auto-recorded by company policy (which HR forgot to disable). Sandra's own words — "Sign or we'll make your life difficult" — are timestamped and archived.
+4. **Payoff:** Vanguard settles. Craig is terminated. Sandra is demoted. Priya's original concerns about falsified reports trigger a client audit that vindicates every flag she raised. She's offered her pick of department — she chooses to stay exactly where she was.
 
 **Character Lock:**
-- **Tamsin Howell** — 32, white, auburn hair pulled back in a hospital band, a labor gown, steady eyes, exhausted but resolute
-- **Craig Palmer** — 38, white, polo shirt and khakis, a birth-plan folder in hand, impatient posture
-- **Vanessa Palmer** — 38, white, blond highlights, a designer diaper bag on her shoulder, pursed lips
-- **Nurse Adeline Cobb** — 44, Black, scrubs and a lanyard, calm authority, holding a clipboard with the POA document
-- **Setting** — St. Luke's Medical Center, Denver, CO; a labor-and-delivery room, beige walls, fetal monitors beeping, fluorescent overhead softened by a dimmer, late evening
-- **Object clue** — the medical POA document on Nurse Cobb's clipboard (the legal authority the Palmers assumed they held — but never did)
+- PRIYA CHAKRABORTY — 36, South Asian, black hair in a low ponytail, minimal jewelry, wears a fitted navy cardigan over a white blouse; senior data analyst, precise, soft-spoken, keeps meticulous notes
+- SANDRA HOLM — 48, white, auburn bob, reading glasses on a beaded chain, blazer with company pin; HR director, polished, uses empathy language as a weapon
+- CRAIG DUNLAP — 44, white, buzz cut, quarter-zip pullover, coffee mug with company logo; Priya's direct manager, avoids eye contact, lets Sandra do the talking
+- Setting: Zoom meeting (Priya in her home office — Minneapolis apartment, gray winter light, organized desk with two monitors); Sandra and Craig in Vanguard Metrics conference room — glass walls, whiteboard, blue carpet
+- Object clue: red "Recording" dot in Zoom toolbar that Sandra didn't notice; cloud link in Priya's account
+
+**Peak-tension (photo):** Split-reality — Priya seated at her home desk, face composed, hands folded, two monitors showing the Zoom call; on one monitor Sandra is visible leaning forward with an intense expression, Craig beside her looking away — Beat 2, twist NOT shown.
 
 ---
 
-### C41008 — F16-11 | The Farm Equipment Auction → The Sister's LLC Outbid Him
+### C41005 | Birth Plan Overridden → Surrogate Holds Medical POA
 
-**Engine:** E30 — Full-Circle Role Reversal | **Tone:** feel-good | **Photo:** twist-hidden
-**Opening style:** Reverse hook
+**Seed:** F14-08 — Hospital follows intended parents' plan → surrogate's medical POA enters — she is the biological mother
+
+**Engine:** E01 — Kindness Rewarded / Pay-It-Forward
 
 **Arc:**
-1. **Setup:** In Salem, OR, older brother Wade Teague, 46, auctions off the family farm's equipment without telling his sister, Jolene Teague, 42. He assumed sole control after their father's death, ignoring Jolene's calls for months. The auction is on a Saturday morning at the farm. Wade expects to pocket $180,000 and walk away.
-2. **Clue:** Bidding is unusually aggressive on every lot. One bidder — paddle #47, a woman in a ball cap at the back — outbids everyone on the combine harvester, the grain truck, and the seed drill. Wade doesn't recognize her from his position at the front.
-3. **Turn:** After the final gavel, the auctioneer announces the top buyer: Teague Valley Agricultural LLC. Wade's face drops. That's their family LLC — the one Jolene incorporated with their father five years ago. Jolene removes her cap. She used the LLC operating account (which requires her signature to withdraw from, meaning Wade never legally funded this auction from shared assets). She bought the equipment back. It never left the farm.
-4. **Payoff:** Jolene doesn't yell. She walks to the combine, runs her hand along the cab, and says: "Dad built this place for both of us. You forgot that. I didn't." Wade stands in his own auction lot with no equipment, no leverage, and a sister who now holds every piece of machinery on the land he thought he controlled alone. She offers him one thing: "Come back when you're ready to do this together."
+1. **Setup:** At Mercy West Hospital in Scottsdale, AZ, intended parents Victor and Elaine Pratt, both 42, override surrogate Marisol Vega's birth plan — demanding a scheduled C-section three weeks early for their "convenience." Marisol, 29, protests but the hospital defers to the Pratts' attorney.
+2. **Clue:** A hospital social worker, Renee Oda, 55, reviews the contract and notices an irregularity — the genetic testing addendum was never filed. She pages the hospital's patient advocate.
+3. **Turn:** Marisol's mother, Delia Vega, arrives with a notarized medical power of attorney. Under Arizona law, Marisol retains bodily autonomy and medical decisions — the surrogacy contract cannot override her POA. Further: the missing genetic addendum reveals Marisol is the biological mother — the embryo transfer failed months ago and the clinic never disclosed it.
+4. **Payoff:** The Pratts' early C-section demand is blocked. Marisol delivers safely on her own timeline. The clinic faces a fraud investigation. Renee, the social worker who caught the irregularity, is recognized by the hospital — she'd been a former surrogate herself and knew exactly what to look for. Kindness and vigilance loop back: someone who'd been through it protected the next woman in line.
 
 **Character Lock:**
-- **Wade Teague** — 46, white, sun-weathered face, a flannel shirt with rolled sleeves, cowboy boots, auction paperwork in hand, increasingly panicked
-- **Jolene Teague** — 42, white, athletic build, dark hair under a faded green ball cap, a canvas jacket, paddle #47, composed determination
-- **Setting** — Teague family farm, outside Salem, OR; a gravel yard between a red barn and a fenced field, farm equipment lined up with lot numbers, a portable auction stage, Saturday morning 10 AM, October mist, Cascade foothills in background
-- **Object clue** — auction paddle #47 (the numbered paddle Jolene registered under the family LLC — the legal entity Wade forgot he shared)
+- MARISOL VEGA — 29, Latina, long dark hair pulled back, hospital gown, tired but resolute; surrogate (unknowingly biological mother), soft-spoken, trusts the process until pushed
+- VICTOR PRATT — 42, white, tall, pressed dress shirt no tie, leather portfolio; intended father, impatient, talks over medical staff
+- ELAINE PRATT — 42, white, blond blowout, cashmere wrap, designer flats; intended mother, defers to Victor, avoids looking at Marisol
+- RENEE ODA — 55, Japanese-American, short silver-streaked hair, hospital badge on blue lanyard, reading glasses tucked into scrub pocket; social worker, former surrogate, calm authority
+- Setting: Mercy West Hospital, labor & delivery floor, Scottsdale, AZ; Wednesday afternoon, sterile hallway light, whiteboard with patient names, nurses' station visible
+- Object clue: notarized medical POA document in Delia's hand; missing genetic addendum flagged on Renee's clipboard
+
+**Peak-tension (photo):** Victor leaning over the nurses' station pointing at paperwork, Elaine behind him with arms crossed, Marisol visible in the background through a cracked hospital room door sitting on the bed holding her belly, a nurse beside her looking conflicted — Beat 2, twist NOT shown.
 
 ---
 
-### C41009 — F20-06 | The Pipeline Easement → The Widow's Water Rights Block the Drill
+### C41006 | Brother Claims House for Caregiving → Sister's Home Health Logs
 
-**Engine:** E06 — Quiet Competence | **Tone:** bittersweet | **Photo:** twist-hidden
-**Opening style:** Silent witness
+**Seed:** F16-05 — Brother claims he deserves the house for caregiving → home health logs show sister did every shift
+
+**Engine:** E09 — Slow-Burn Devotion
 
 **Arc:**
-1. **Setup:** In Midland, TX, energy company Permian Resources sends a landman to pressure widow Lucille Brandt, 71, into selling pipeline easement rights across her 640-acre ranch. The company has already begun surveying without her signed consent, assuming she'll fold. Lucille's husband Earl died two years ago; the company views her as an easy target.
-2. **Clue:** Lucille has said nothing to the landman, the surveyor, or the company attorney. But she's been driving to the county clerk's office twice a week. The clerk, a woman named Rosa, knows exactly what Lucille is pulling from the records.
-3. **Turn:** At the county hearing, Permian Resources presents their eminent-domain petition. Lucille's attorney (her granddaughter, freshly passed the bar) stands and presents a 1952 water-rights deed showing the easement route crosses a protected aquifer — and Lucille holds senior water rights over that aquifer. State law prohibits pipeline construction that threatens senior water-right holders without their consent. Consent that Lucille will never give.
-4. **Payoff:** The petition is denied. Permian Resources must reroute at a cost of $14 million. Lucille drives home, parks her truck, and sits on Earl's porch chair. She doesn't celebrate. She just looks at the land — uncut, undrilled, still hers. The windmill turns. Earl's boots are still by the door.
+1. **Setup:** After their mother's death, Russell Ames, 46, petitions the probate court in Burlington, VT to claim the family home, arguing he was the sole caregiver for three years. His sister, Colleen Ames, 43, sits quietly at the respondent's table. The judge asks Russell to present evidence.
+2. **Clue:** Russell presents a calendar of "visits" — dates he claims he was at the house. Colleen's attorney requests a continuance to obtain records from Green Mountain Home Health, the agency that provided daily care.
+3. **Turn:** The home health logs arrive. Three years of daily visit records — every single entry signed by the caregiver present: Colleen Ames. She wasn't a staff employee — she volunteered through the agency, using her vacation days and then unpaid leave from her teaching job to provide her mother's care. Russell's "visits" overlap with days the logs show he never appeared.
+4. **Payoff:** The court awards the home to Colleen. But the payoff isn't revenge — it's recognition of devotion. Among the logs is a handwritten note from their mother to the agency: "My daughter comes every day. She thinks I don't know. Tell her I know. Tell her thank you." Colleen reads it in the courtroom. Even Russell cries. The home stays in the family — Colleen opens it as a respite care center for other caregivers.
 
 **Character Lock:**
-- **Lucille Brandt** — 71, white, sun-lined face, silver hair in a single braid, a denim work shirt tucked into worn jeans, quiet and unhurried, steel underneath
-- **Megan Brandt** — 27, white, Lucille's granddaughter, a navy blazer over a western-cut blouse, new briefcase, steady voice despite nerves
-- **Dale Spurlock** — 44, white, Permian Resources landman, a starched pearl-snap shirt and polished boots, too-confident handshake, a survey map rolled under his arm
-- **Setting** — (Photo) Lucille's ranch porch, Midland, TX; a weathered rocking chair, Earl's boots by the door, a windmill turning against a flat horizon, a surveyor's truck visible on the dirt road beyond the fence, late afternoon, golden dust light
-- **Object clue** — the 1952 water-rights deed (yellowed paper in a county-clerk folder — the document a billion-dollar company never thought to check)
+- COLLEEN AMES — 43, white, light brown hair in a practical braid, no makeup, wears a cardigan over a cotton blouse, small pearl earrings (her mother's); middle-school teacher, quiet, arrives early and stays late
+- RUSSELL AMES — 46, white, athletic build, golf tan, pressed button-down, expensive watch; works in real estate, performative grief, loud in court
+- Setting: Chittenden County Probate Court, Burlington, VT; Thursday morning, March, snow visible through courtroom windows, wooden benches, American flag behind the judge
+- Object clue: Green Mountain Home Health daily visit log binder; handwritten note from mother tucked inside the final page
+
+**Peak-tension (photo):** Russell at the petitioner's podium gesturing confidently with a printed calendar, Colleen seated at the respondent's table with hands folded, a thick binder on the table in front of her attorney, snow-light through tall windows — Beat 2, twist NOT shown.
 
 ---
 
-### C41010 — F23-05 | The Collab House Eviction → The Lease Was Always Hers
+### C41007 | Roughneck Mocked → Landowner's Grandson Returns Lease
 
-**Engine:** E30 — Full-Circle Role Reversal | **Tone:** bittersweet | **Photo:** twist-hidden
-**Opening style:** In medias res
+**Seed:** F20-03 — A roughneck on a drilling crew is mocked for reading land surveys → he's the grandson of the original lease-holder and owns the mineral rights beneath them
+
+**Engine:** E03 — Debt of Gratitude ("You Don't Remember Me")
 
 **Arc:**
-1. **Setup:** In a content-creator collab house in Atlanta, GA, five influencers share a rented mansion to produce daily content. The de facto leader, Jordan Vickers, 26, calls a house meeting to vote out the quietest member, Sasha Morin, 24, whose follower count is the lowest. The others agree — she's "dead weight." They give her 48 hours to leave.
-2. **Clue:** Sasha doesn't argue. She packs one bag. But the house manager, Carlos, notices she's the only name on the utility accounts, the Wi-Fi, and the alarm system. He's confused — because the lease signature he witnessed six months ago was also hers alone.
-3. **Turn:** On eviction day, Jordan changes the locks and posts a celebratory TikTok. Two hours later, the property management company calls: the lease belongs to Sasha Morin. She is the sole tenant. Everyone else is a subletter with no written agreement. Sasha's attorney sends a formal notice: all unauthorized occupants have 72 hours to vacate.
-4. **Payoff:** The collab house empties. Jordan scrambles for a new place. Sasha returns to the house alone, walks through the empty rooms, and sits on the porch. She doesn't post about it. She just opens her laptop and starts editing — the content she was always making, quietly, while they measured her by follower count instead of craft. The house is hers. The story she tells next will be too.
+1. **Setup:** Joaquin Reyes, 28, works as a roughneck on a Permian Basin drill site outside Midland, TX. He's quiet, reads land surveys during breaks, and the crew foreman, Dale Whitmore, 52, mocks him daily: "Boy thinks he's a lawyer." The drilling company, West Permian Energy, pushes production without maintaining safety protocols.
+2. **Clue:** Joaquin finds a survey marker that doesn't match the lease map. He photographs it. Dale rips the survey from his hands: "You're paid to wrench pipe, not read." That night, Joaquin calls his grandmother, Esperanza Reyes, 84, who confirms what he suspected — the marker is from the original 1957 lease her father signed.
+3. **Turn:** West Permian's lease expired eighteen months ago and was never properly renewed. The mineral rights beneath the active drill site still belong to the Reyes family — Joaquin's grandmother never sold. Joaquin isn't just a roughneck; his grandfather helped discover this field, and the family was cheated out of royalties for decades. Joaquin came to work the rig to gather evidence.
+4. **Payoff:** The Reyes family attorney issues a cease-and-desist. West Permian must negotiate a new lease at fair market royalty rates — or abandon the site. Dale is fired for safety violations Joaquin documented. Joaquin uses the first royalty check to build his grandmother the house his grandfather promised her in 1957.
 
 **Character Lock:**
-- **Sasha Morin** — 24, biracial (Black/white), natural curls past her shoulders, an oversized flannel over a tank top, a single duffel bag, quiet confidence masked as timidity
-- **Jordan Vickers** — 26, white, bleached buzz cut, ring light tan, designer streetwear, loud energy, a phone always recording
-- **Carlos Mejia** — 30, Latino, house manager, a clipboard and key ring, growing concern on his face
-- **Setting** — A rented mansion in Buckhead, Atlanta, GA; open-plan living room with ring lights, camera tripods, a sectional couch where the house meeting happens, large windows, midday sun, Tuesday afternoon
-- **Object clue** — the lease agreement in Sasha's name (the single legal document that makes her the landlord and everyone else guests — the authority they never thought the quiet girl held)
+- JOAQUIN REYES — 28, Mexican-American, close-cropped hair, sun-darkened skin, oil-stained coveralls, steel-toed boots, carries a folded land survey in his back pocket; quiet, observant, reads at lunch
+- DALE WHITMORE — 52, white, leathery face, hard hat, Oakley sunglasses pushed up, tobacco stain on chin; crew foreman, loud, dismissive of anyone under thirty
+- ESPERANZA REYES — 84, Mexican-American, silver braid, house dress, sits on her porch with the original 1957 lease in a fireproof box (not in photo)
+- Setting: Permian Basin drill site, outside Midland, TX; midday, summer, blazing sun, pump jacks in background, portable office trailer, red dust
+- Object clue: folded land survey in Joaquin's back pocket; survey marker stake with faded numbers in the dirt
+
+**Peak-tension (photo):** Joaquin crouched near a survey marker in the dirt, Dale standing over him pointing and yelling, two crew members watching from the rig platform, pump jacks silhouetted against a white-hot Texas sky — Beat 2, twist NOT shown.
+
+---
+
+### C41008 | Influencer Charity Gala → Exposed On Stage
+
+**Seed:** F23-14 — An influencer hosts a charity livestream gala → a former beneficiary walks on stage with receipts showing the charity kept 94% of donations
+
+**Engine:** E12 — Karma / Comeuppance
+
+**Arc:**
+1. **Setup:** Lifestyle influencer Brianna Cole, 31, hosts her annual "Hearts & Hope Gala" at a rooftop venue in Miami, FL — a glittering charity livestream with 50,000 concurrent viewers. Sponsors pay $10,000 a table. Brianna's brand is built on "giving back."
+2. **Clue:** Backstage, event coordinator Yesenia Marquez, 26, notices that the featured "scholarship recipient" on tonight's program — a high school senior named Aiden — was never actually contacted. Yesenia finds the scholarship fund's tax filings in a printer tray: the charity disbursed only 6% to recipients. The rest went to "event production" and Brianna's management company.
+3. **Turn:** During Brianna's tearful on-stage speech about "changing lives," Aiden's mother, Doreen Price, 44, walks onto the stage holding a manila envelope. She's driven from Homestead — 40 miles — after Yesenia called her. Doreen holds up the IRS Form 990: "$380,000 in donations. $22,800 to scholarships. $357,200 to production and management fees." The livestream chat explodes.
+4. **Payoff:** Brianna's sponsors pull out on-air. Her management company is named in a state attorney general investigation within the week. Doreen's son Aiden receives a full scholarship from a legitimate foundation that contacts them after the video goes viral. Yesenia is offered a position at that foundation.
+
+**Character Lock:**
+- BRIANNA COLE — 31, white, platinum blond extensions, sequined champagne gown, statement earrings, perfect makeup; influencer, 2.4M followers, performance empathy
+- DOREEN PRICE — 44, Black, natural hair, modest navy dress, flat shoes, manila envelope clutched in both hands; single mother, dignified, angry but controlled
+- YESENIA MARQUEZ — 26, Latina, dark bob, all-black event staff outfit, earpiece, clipboard; event coordinator, first to see the filings
+- Setting: Rooftop gala venue, Brickell district, Miami, FL; Saturday night, string lights, skyline backdrop, round tables with white linens, livestream cameras, 200 guests
+- Object clue: manila envelope with IRS Form 990 showing donation breakdown; printer tray backstage with tax filings
+
+**Peak-tension (photo):** Brianna mid-speech at the podium under spotlight, one hand on her chest performing emotion, while in the wings stage-left Doreen stands holding the manila envelope waiting to walk on, Yesenia beside her with a hand on Doreen's shoulder — Beat 2–3, twist NOT shown.
+
+---
+
+### C41009 | Sham Marriage Exposed → Real Love Lost
+
+**Seed:** F26-07 — A couple married for immigration paperwork realizes at their annulment hearing that the feelings became real — but the fraud charge makes reconciliation impossible
+
+**Engine:** E11 — Bittersweet / Too Late
+
+**Arc:**
+1. **Setup:** At the Richard J. Daley Center in Chicago, IL, Tomas Krejci, 34, a Czech immigrant, and Amara Washington, 32, an American marketing executive, sit on opposite sides of a courtroom for their annulment hearing. They married three years ago — officially for his green card. ICE flagged the marriage as fraudulent.
+2. **Clue:** The judge asks routine questions. When did you stop living together? Amara hesitates. Their shared apartment was supposed to be a prop — but she still has his grandmother's teacup on her shelf. He still carries her house key on his ring. Neither has moved out.
+3. **Turn:** Tomas's attorney presents the annulment petition. Tomas is asked if the marriage was entered solely for immigration benefit. He looks at Amara. She looks at her hands. He says: "It started that way. It isn't that way now." Amara's breath catches. But the admission of initial fraud means the marriage is legally void — and his green card application is denied. He faces deportation.
+4. **Payoff:** The marriage is annulled. Tomas is given 90 days before removal proceedings begin. Outside the courtroom, they stand on opposite sides of the hallway — close enough to touch, legally strangers. Amara holds the key he slid across the table. He holds the teacup she returned. The truth came too late to save them.
+
+**Character Lock:**
+- TOMAS KREJCI — 34, Czech, sandy brown hair slightly grown out, stubble, navy suit that's slightly too large (borrowed); software developer, quiet intensity, fidgets with a key ring
+- AMARA WASHINGTON — 32, Black, box braids pulled into a low bun, minimal makeup, gray blazer over a white tee; marketing executive, guarded, avoids looking directly at Tomas
+- Setting: Richard J. Daley Center courtroom, Chicago, IL; Wednesday morning, October, institutional fluorescent light, wood-paneled walls, judge's bench elevated, gallery empty
+- Object clue: house key on Tomas's key ring; grandmother's teacup (small, floral, Czech porcelain) returned in a cloth bag
+
+**Peak-tension (photo):** Tomas and Amara seated at separate tables, both facing forward toward the judge's bench, Tomas's hand resting near a key ring on the table, Amara's fingers curled around a small cloth bag in her lap — Beat 2, twist NOT shown.
+
+---
+
+### C41010 | Silent PTA Volunteer Bullied → Kindness Rewarded
+
+**Seed:** F29-19 — A quiet PTA volunteer is mocked for her accent and plain clothes → the school board reveals her anonymous donations funded every program the PTA takes credit for
+
+**Engine:** E01 — Kindness Rewarded / Pay-It-Forward
+
+**Arc:**
+1. **Setup:** Hae-Won Park, 49, a Korean immigrant, volunteers silently at Westridge Elementary in Eugene, OR — laminating, shelving, cutting decorations — while PTA president Jocelyn Tate, 44, and her circle mock Hae-Won's accent, her plain clothes, and her "inability to contribute meaningfully." They assign her only menial tasks.
+2. **Clue:** At the spring budget meeting, Principal Debra Olson announces the school received $120,000 in anonymous donations over three years — funding the arts program, playground equipment, and library expansion. Jocelyn claims "our fundraising efforts" deserve the credit. Hae-Won sits in the back row, silent.
+3. **Turn:** The school board's transparency report is released — required by a new district policy. The anonymous donor is identified: Hae-Won Park. She owns a successful online education platform she built after arriving in the US fifteen years ago. She never told anyone because she "didn't want the children's programs to be about her."
+4. **Payoff:** The community rallies around Hae-Won. Jocelyn's PTA presidency is not renewed. But the payoff isn't revenge — it's recognition. Hae-Won is invited to cut the ribbon on the new library wing. Her son, now a senior, reads the dedication plaque aloud in Korean and English. The school names the arts program after her late mother, who was a teacher in Seoul.
+
+**Character Lock:**
+- HAE-WON PARK — 49, Korean-American, black hair with silver at temples, no makeup, wears a simple navy cardigan and flat shoes; online education entrepreneur, widowed, deeply private, volunteers in silence
+- JOCELYN TATE — 44, white, highlighted hair in a high ponytail, athleisure with designer bag, AirPods; PTA president, performative, takes credit, excludes outsiders
+- PRINCIPAL DEBRA OLSON — 56, white, short salt-and-pepper hair, lanyard with reading glasses, warm smile; school principal, genuine, appreciates Hae-Won
+- Setting: Westridge Elementary, multi-purpose room, Eugene, OR; Thursday evening, spring, folding chairs, PTA banner, fluorescent lights, children's art on walls
+- Object clue: transparency report with donor name; dedication plaque for Hae-Won's mother
+
+**Peak-tension (photo):** Hae-Won in the back row of folding chairs, hands in her lap, plain cardigan, while at the front Jocelyn stands at a podium gesturing grandly and taking applause from seated parents, a PTA banner behind her reading "WE DID IT" — Beat 2, twist NOT shown.
+
+---
+
+## Notes
+
+- All settings US-based, 10 distinct states, fictional characters only
+- No graphic violence or sexual content (Google policy compliant)
+- Photo shows tension Beat 1–2 only; payoff never in frame
+- Engines: E00, E11, E03, E06, E01, E09, E03, E12, E11, E01 — 6 distinct, no consecutive duplicates ✓
+- Opening styles: all 10 distinct ✓
+- Families from concepts5: F01, F04, F07, F10, F14, F16, F20, F23, F26, F29 — no overlap with batch-25 exclusion list ✓
